@@ -1,0 +1,30 @@
+/**
+ * Enumera los nombres de archivo que se corresponden con
+ * la cadena de búsqueda proporcionada.
+ * @param searchString La cadena que hay que buscar.
+ */
+public void listMatching(String searchString) {
+    for (String filename : files) {
+        if (filename.contains(searchString)) {
+            System.out.println(filename);
+        }
+    }
+}
+
+
+//
+public void listMatching(String searchString){
+    boolean seHanEncontradoResultados;
+    seHanEncontradoResultados = false;
+
+    for (String filename : files) {
+        if (filename.contains(searchString)) {
+            System.out.println(filename);
+            seHanEncontradoResultados = true;
+        }
+    }
+
+    if (!seHanEncontradoResultados) {
+        System.out.println("Error: no se han encontrado archivos con el texto buscado");
+    }
+}

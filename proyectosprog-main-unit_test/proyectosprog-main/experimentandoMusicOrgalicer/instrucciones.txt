@@ -1,0 +1,42 @@
+paso 1. Crea 5 clases de test nuevas llamadas DiezCancionesTest, SesiCancionesTest, DosCancionesTest, UnaCanciontest, CeroCancionesTest:
+paso 2. Crea un objeto de la clase MusicOrganizer:
+paso 3. Añade usando el método addFile al organizador la siguiente lista de canciones:
+
+Loba - Shakira.mp3
+Bailando - Enrique Iglesias.mp3
+Waka Waka - Shakira.mp3
+Umbrella - Rihanna.mp3
+Iglesias Ardiendo - Manuel Carrasco.mp3
+Can't Remember to Forget You - Rihanna & Shakira.mp3
+La promesa - Melendi.mp3
+Ay mamá - Melendi & Shakira.mp3
+El perdedor - Enrique Iglesias.mp3
+Hey - Julio Iglesiasi.mp3
+
+paso 4 : Utiliza la opción Banco de objetos para prueba base sobre la clase DiezCancionesTest:
+paso 5. Accede al código de la clase DiezCancionesTest y verifica que el método setUp solo contiene la siguientes líneas (si tiene más, bórralas):
+@BeforeEach
+public void setUp()
+{
+    musicOrg2 = new MusicOrganizer();
+    musicOrg2.addFile("Loba - Shakira.mp3");
+    musicOrg2.addFile("Bailando - Enrique Iglesias.mp3");
+    musicOrg2.addFile("Waka Waka - Shakira.mp3");
+    musicOrg2.addFile("Umbrella - Rihanna.mp3");
+    musicOrg2.addFile("Iglesias Ardiendo - Manuel Carrasco.mp3");
+    musicOrg2.addFile("Can't Remember to Forget You - Rihanna & Shakira.mp3");
+    musicOrg2.addFile("La promesa - Melendi.mp3");
+    musicOrg2.addFile("Ay mamá - Melendi & Shakira.mp3");
+    musicOrg2.addFile("El perdedor - Enrique Iglesias.mp3");
+    musicOrg2.addFile("Hey - Julio Iglesias.mp3");
+}
+
+paso 6.  Usa la opción Prueba base para banco de objetos sobre la clase DiezCancionesTest:
+paso 7.  Usa la opción Banco de objetos para prueba base sobre la clase de test SeisCancionesTest:
+paso 8. Entra en el código de la clase SeisCancionesTest y elimina las últimas 4 líneas del método setUp:
+paso 9. Usa la opción Prueba base para banco de objetos sobre la clase de test SeisCancionesTest:
+paso 10.  Abre la terminal de BlueJ y asegúrate que está activada la opción Limpiar la pantalla en llamada al método:
+paso 11. Invoca el método listAllFiles sobre el objeto que se ha creado en el banco de objetos y verifica que aparecen solo 6 canciones en la terminal:
+paso 12. Repite los pasos anteriores con la clase DosCancionesTest de forma que quede solo dos canciones:
+paso 13. Repite los pasos anteriores con la clase UnaCancionTest de forma que quede solo una canción:
+paso 14. Repite los pasos anteriores con la clase CeroCancionesTest de forma que el organizador esté vacío:
